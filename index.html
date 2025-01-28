@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>🎇</title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+		
+		{
+			border: 1px solid black;
+		}
+		
+		* {
+			box-sizing: border-box;
+			font-family: "Pangolin", sans-serif;
+			margin: 0;
+			color: var(--red);
+		}
+		
+		:root {
+			--red: #a00204;
+			--yellow: #faf18c;
+			--whitish: #fffae8;
+		}
+		
+		body {
+			background-image: url("bg2.jpeg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+		
+		.event-title {
+			font-family: "Mea Culpa", cursive;
+			font-size: 3rem;
+			text-align: center;
+			padding: 0;
+		}
+		
+		.subtitle {
+			font-size: 2rem;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.5rem;
+			color: var(--red);
+			margin: 0 auto;
+			background-color: var(--yellow);
+			width: fit-content;
+			padding: 0.5rem;
+		}
+		
+		.card {
+			background-color: var(--red);
+			background-image: url("card-bg.jpeg");
+			background-repeat: no-repeat;
+			background-size: calc(0.2 * 80vw + 3rem);
+			background-position: 0% 100%;
+			gap: 2rem;
+			rotate: 2deg;
+			box-shadow: 0 0 1rem #cc3a3d;
+			margin: 3rem auto;
+			padding: 2rem;
+			display: flex;
+			width: 80%;
+		}
+		
+		.description {
+			width: 20%;
+		}
+		
+		p {
+			text-indent: 2rem;
+			margin-top: 1rem;
+			text-align: justify;
+			color: var(--whitish);
+		}
+		
+		
+		form {
+			border-left: 0.1rem solid var(--yellow);
+			padding-left: 2rem;
+			flex-grow: 1;
+		}
+		
+		label, textarea, input {
+			display: block;
+		}
+		
+		label {
+			margin-top: 2rem;
+			background-color: var(--yellow);
+			color: #9f0a06;
+			padding: 0.2rem;
+			width: fit-content;
+		}
+		
+		label:first-of-type {
+			margin-top: 0;
+		}
+		
+		input, textarea {
+			font-size: 1rem;
+			background-color: var(--whitish);
+			width: 100%;
+			margin-top: 0.5rem;
+		}
+		
+		details {
+			margin-top: 2rem;
+			padding: 1rem;
+			background-color: var(--yellow);
+		}
+		
+		details label {
+			background-color: var(--red);
+			color: var(--yellow);
+		}
+		
+		summary {
+			cursor: pointer;
+			color: var(--red);
+		}
+		
+		label[for="wish2"] {
+			margin-top: 0.5rem;
+		}
+		
+		.submit {
+			font-size: 1rem;
+			font-weight: normal;
+			margin-top: 2rem;
+			width: 30%;
+			height: 2rem;
+			float: right;
+		}
+		
+		
+		@media screen and (max-width: 500px) {
+			body {
+				overflow: initial;
+				background-size: contain;
+				background-repeat: repeat;
+			}
+			
+			.card {
+				display: block;
+				padding: 1.5rem;
+				rotate: none;
+			}
+			
+			p {
+				text-indent: 0;
+			}
+			
+			form {
+				padding: 0;
+				padding-top: 2rem;
+				margin-top: 2rem;
+				border-left: 0;
+				border-top: 1px solid #cc3a3d;
+			}
+			
+			.description {
+				width: 100%;
+			}
+			
+			.submit {
+				width: 100%;
+				float: none;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 class="event-title">Chúc Tết 2025</h1>
+	<p class="subtitle">Đội SVTN Khoa KH&CN Giáo dục</p>
+	
+	<div class="card">
+	<div class="description">
+	<p>Năm cũ chuẩn bị qua đi, năm mới sắp đến, liệu bạn có điều gì muốn nhắn nhủ những người đồng đội đã đồng hành cùng mình trong suốt một năm vừa qua? Hãy cho chúng mình biết nhé :></p>
+	
+	<p>ℹ️ Lời chúc sẽ được thu thập trong ngày 29 Tết, sau đó sẽ được đăng dần lên group chat Đội trong ngày mùng 1.</p>
+	
+	</div>
+	
+	<form method="post" action="https://api.sheetmonkey.io/form/SxYozwkSVXZ5eCK8bFHd2">
+	
+	<label for="name">Tên người viết (không bắt buộc): </label>
+	<input id="name" type="text" name="Tên người gửi" placeholder="Nguyễn Hồng Vân">
+	
+	<label for="wish1">Lời chúc 1 (bắt buộc):</label>
+	<textarea required id="wish1" rows="10" name="Lời chúc 1" placeholder="Chúc mọi người luôn phấp phới ạ~"></textarea>
+	
+	<details>
+	<summary>Viết thêm lời chúc... (không bắt buộc)</summary>
+	
+	<label for="wish2">Lời chúc 2:</label>
+	<textarea id="wish2" rows="10" name="Lời chúc 2" placeholder="Chúc tôi biết des trong năm 2025..."></textarea>
+	
+	<label for="wish3">Lời chúc 3:</label>
+	<textarea id="wish3" rows="10" name="Lời chúc 3" placeholder="Chúc [insert lời chúc]..."></textarea>
+	
+	<label for="wish4">Lời chúc 4:</label>
+	<textarea id="wish4" rows="10" name="Lời chúc 4" placeholder="Chúc gì đấy..."></textarea>
+	
+	<label for="wish5">Lời chúc 5:</label>
+	<textarea id="wish5" rows="10" name="Lời chúc 5" placeholder="Uầy bạn viết hẳn 5 lời chúc cơ ấy hả"></textarea>
+	
+	</details>
+	
+	<input class="submit" type="submit" value="Gửi lời chúc!">
+	</form>
+	</div>
+
+</body>
+</html>
